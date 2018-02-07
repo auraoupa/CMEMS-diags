@@ -1,0 +1,322 @@
+{
+    " A20130701-03574": {
+        "date": "2013-07-01T16:06:34.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 37.9,
+        "longitude": 2.384,
+        "profile no": 38,
+        "reference": " A20130701-03574"
+    },
+    " A20130701-03657": {
+        "date": "2013-07-01T01:00:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.383,
+        "longitude": 0.605,
+        "profile no": 121,
+        "reference": " A20130701-03657"
+    },
+    " A20130702-03674": {
+        "date": "2013-07-02T21:45:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 39.811,
+        "longitude": 2.396,
+        "profile no": 138,
+        "reference": " A20130702-03674"
+    },
+    " A20130702-03712": {
+        "date": "2013-07-02T11:54:35.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 36.875,
+        "longitude": -0.699,
+        "profile no": 176,
+        "reference": " A20130702-03712"
+    },
+    " A20130703-03789": {
+        "date": "2013-07-03T19:02:59.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 36.957,
+        "longitude": -0.873,
+        "profile no": 253,
+        "reference": " A20130703-03789"
+    },
+    " A20130705-04012": {
+        "date": "2013-07-05T17:58:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.236000000000004,
+        "longitude": 0.515,
+        "profile no": 476,
+        "reference": " A20130705-04012"
+    },
+    " A20130705-04019": {
+        "date": "2013-07-05T15:39:22.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.016,
+        "longitude": 2.014,
+        "profile no": 483,
+        "reference": " A20130705-04019"
+    },
+    " A20130705-64963": {
+        "date": "2013-07-05T08:31:12.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 39.962,
+        "longitude": 4.446,
+        "profile no": 25674,
+        "reference": " A20130705-64963"
+    },
+    " A20130705-64972": {
+        "date": "2013-07-05T09:55:12.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 39.967,
+        "longitude": 4.614,
+        "profile no": 25683,
+        "reference": " A20130705-64972"
+    },
+    " A20130705-64991": {
+        "date": "2013-07-05T12:03:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 39.97,
+        "longitude": 4.8,
+        "profile no": 25702,
+        "reference": " A20130705-64991"
+    },
+    " A20130707-04210": {
+        "date": "2013-07-07T19:10:25.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 36.886,
+        "longitude": -1.062,
+        "profile no": 674,
+        "reference": " A20130707-04210"
+    },
+    " A20130709-04448": {
+        "date": "2013-07-09T16:01:53.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.078,
+        "longitude": 2.025,
+        "profile no": 912,
+        "reference": " A20130709-04448"
+    },
+    " A20130710-04562": {
+        "date": "2013-07-10T19:18:10.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.652,
+        "longitude": 3.89,
+        "profile no": 1026,
+        "reference": " A20130710-04562"
+    },
+    " A20130710-04596": {
+        "date": "2013-07-10T10:45:10.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.054,
+        "longitude": 0.447,
+        "profile no": 1060,
+        "reference": " A20130710-04596"
+    },
+    " A20130711-04670": {
+        "date": "2013-07-11T19:09:04.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 36.667,
+        "longitude": -1.08,
+        "profile no": 1134,
+        "reference": " A20130711-04670"
+    },
+    " A20130712-04771": {
+        "date": "2013-07-12T21:33:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 39.939,
+        "longitude": 2.75,
+        "profile no": 1235,
+        "reference": " A20130712-04771"
+    },
+    " A20130712-04802": {
+        "date": "2013-07-12T12:49:17.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 36.248,
+        "longitude": -0.77,
+        "profile no": 1266,
+        "reference": " A20130712-04802"
+    },
+    " A20130713-04901": {
+        "date": "2013-07-13T16:02:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.231,
+        "longitude": 2.175,
+        "profile no": 1365,
+        "reference": " A20130713-04901"
+    },
+    " A20130715-05102": {
+        "date": "2013-07-15T18:55:59.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 36.365,
+        "longitude": -0.948,
+        "profile no": 1566,
+        "reference": " A20130715-05102"
+    },
+    " A20130715-05136": {
+        "date": "2013-07-15T12:02:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.557,
+        "longitude": 4.014,
+        "profile no": 1600,
+        "reference": " A20130715-05136"
+    },
+    " A20130715-05172": {
+        "date": "2013-07-15T05:12:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 37.992000000000004,
+        "longitude": 0.42700000000000005,
+        "profile no": 1636,
+        "reference": " A20130715-05172"
+    },
+    " A20130717-05332": {
+        "date": "2013-07-17T16:13:19.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.187,
+        "longitude": 2.629,
+        "profile no": 1796,
+        "reference": " A20130717-05332"
+    },
+    " A20130719-05535": {
+        "date": "2013-07-19T22:32:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 37.955,
+        "longitude": 0.364,
+        "profile no": 1999,
+        "reference": " A20130719-05535"
+    },
+    " A20130719-05550": {
+        "date": "2013-07-19T19:15:54.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 36.171,
+        "longitude": -0.849,
+        "profile no": 2014,
+        "reference": " A20130719-05550"
+    },
+    " A20130720-05723": {
+        "date": "2013-07-20T04:45:40.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.497,
+        "longitude": 4.127,
+        "profile no": 2187,
+        "reference": " A20130720-05723"
+    },
+    " A20130721-05781": {
+        "date": "2013-07-21T16:06:26.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.082,
+        "longitude": 2.707,
+        "profile no": 2245,
+        "reference": " A20130721-05781"
+    },
+    " A20130722-05870": {
+        "date": "2013-07-22T20:09:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 39.921,
+        "longitude": 2.812,
+        "profile no": 2334,
+        "reference": " A20130722-05870"
+    },
+    " A20130722-05906": {
+        "date": "2013-07-22T11:46:23.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 36.609,
+        "longitude": -0.077,
+        "profile no": 2370,
+        "reference": " A20130722-05906"
+    },
+    " A20130723-05981": {
+        "date": "2013-07-23T19:16:45.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 36.102,
+        "longitude": -0.8,
+        "profile no": 2445,
+        "reference": " A20130723-05981"
+    },
+    " A20130724-06071": {
+        "date": "2013-07-24T21:32:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.593,
+        "longitude": 3.998,
+        "profile no": 2535,
+        "reference": " A20130724-06071"
+    },
+    " A20130724-06097": {
+        "date": "2013-07-24T15:23:30.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 37.955,
+        "longitude": 0.226,
+        "profile no": 2561,
+        "reference": " A20130724-06097"
+    },
+    " A20130725-06195": {
+        "date": "2013-07-25T16:12:09.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 37.934,
+        "longitude": 2.804,
+        "profile no": 2659,
+        "reference": " A20130725-06195"
+    },
+    " A20130727-06397": {
+        "date": "2013-07-27T19:19:04.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 36.171,
+        "longitude": -0.743,
+        "profile no": 2861,
+        "reference": " A20130727-06397"
+    },
+    " A20130729-06638": {
+        "date": "2013-07-29T15:52:40.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 37.83,
+        "longitude": 2.877,
+        "profile no": 3102,
+        "reference": " A20130729-06638"
+    },
+    " A20130729-06649": {
+        "date": "2013-07-29T14:22:10.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.725,
+        "longitude": 4.034,
+        "profile no": 3113,
+        "reference": " A20130729-06649"
+    },
+    " A20130729-06688": {
+        "date": "2013-07-29T08:08:30.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 37.926,
+        "longitude": 0.203,
+        "profile no": 3152,
+        "reference": " A20130729-06688"
+    },
+    " A20130730-77559": {
+        "date": "2013-07-30T16:34:13.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 39.627,
+        "longitude": 0.001,
+        "profile no": 36308,
+        "reference": " A20130730-77559"
+    },
+    " A20130731-06845": {
+        "date": "2013-07-31T19:33:50.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 36.186,
+        "longitude": -0.648,
+        "profile no": 3309,
+        "reference": " A20130731-06845"
+    },
+    " A20130731-06877": {
+        "date": "2013-07-31T11:37:00.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 38.513691666666666,
+        "longitude": 4.65489,
+        "profile no": 3341,
+        "reference": " A20130731-06877"
+    },
+    " A20130731-77621": {
+        "date": "2013-07-31T15:40:46.000000000",
+        "file": "EN.4.2.0.f.profiles.g10.201307.nc",
+        "latitude": 39.097,
+        "longitude": 0.076,
+        "profile no": 36370,
+        "reference": " A20130731-77621"
+    }
+}
