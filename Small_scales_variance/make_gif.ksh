@@ -1,0 +1,1 @@
+convert -delay 120 -loop 0 NATL60_small_scale_vorticity_variance_monthly_mean_coarse_m*.png NATL60_small_scale_vorticity_variance.gif
