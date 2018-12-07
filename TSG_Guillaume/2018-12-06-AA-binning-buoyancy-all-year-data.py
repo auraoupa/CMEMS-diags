@@ -10,10 +10,9 @@ import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
 import sys
-sys.path.insert(0,"/Users/auraoupa/Work/git/cmclimate")
+sys.path.insert(0,"/home/albert/git/cmclimate")
 import cmclimate
 import os
-get_ipython().magic(u'matplotlib inline')
 matplotlib.rcParams['figure.figsize']= (20, 8)
 matplotlib.rcParams['xtick.labelsize']= 14
 matplotlib.rcParams['ytick.labelsize']= 14
@@ -77,7 +76,7 @@ def binning_gradients(data, lon_res=0.05, lat_res=0.05,
 # In[4]:
 
 
-ds = xr.open_dataset('/Users/auraoupa/Data/TSG/ALL_horizontal_gradients.nc', chunks={'time': 1e7})
+ds = xr.open_dataset('/mnt/meom/workdir/albert/TSG/ALL_horizontal_gradients.nc', chunks={'time': 1e7})
 
 
 # In[5]:
