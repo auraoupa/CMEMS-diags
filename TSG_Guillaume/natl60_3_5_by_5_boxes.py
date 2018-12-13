@@ -39,7 +39,7 @@ def read_datagrid(gridfile,latmin=None,latmax=None,lonmin=None,lonmax=None):
 
 # - Define box dimensions
 Box_01 = ['42.0','37.0','-65.0','-60.0','GS',1]
-Box_02 = ['60.0','55.0','-15.0','-10.0','NE',2]
+Box_02 = ['55.0','50.0','-17.0','-12.0','NE',2]
 Box_03 = ['36.0','31.0','-30.0','-25.0','AC',3]
 
 
