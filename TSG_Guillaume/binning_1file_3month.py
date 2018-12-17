@@ -13,7 +13,8 @@ matplotlib.rcParams['axes.labelsize']= 16
 import numpy.ma as ma
 import glob
 
-
+dsmask=xr.open_dataset('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-I/NATL60-CJM165_mask-surf_filt-n80-f0.1.nc')
+mask_one=dsmask['tmask'][0]
 
 def binning_gradients(data, lon_res=0.05, lat_res=0.05,
                             lon_min=0., lon_max=360.,
@@ -27,9 +28,10 @@ def binning_gradients(data, lon_res=0.05, lat_res=0.05,
     total_nobs = []
     lat_values = []
     vo=data['vohgradb']
-    vo.coords['nav_lat']=data.nav_lat
-    vo.coords['nav_lon']=data.nav_lon
-    for i, ds in list(vo.groupby_bins('nav_lat', lat_bins, 
+    vo_ma=vo.where(mask_one==1)
+    vo_ma.coords['nav_lat']=data.nav_lat
+    vo_ma.coords['nav_lon']=data.nav_lon
+    for i, ds in list(vo_ma.groupby_bins('nav_lat', lat_bins, 
                                         labels=lat_labels, 
                                         include_lowest=True)):
         try:
@@ -64,35 +66,45 @@ def binning_gradients(data, lon_res=0.05, lat_res=0.05,
 
     return xr.Dataset({'vohgradb':res_bins, 'nobs':res_obs})
 
-ds_hgradT_JFM=xr.open_dataset('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_y2013m01-m03.1d_hgradT_filt-n80-f0.1.nc')
+ds_hgradT_JFM=xr.open_dataset('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_y2013m01-m03.1d_hgradT_large-n80-f0.1.nc')
 
 binned_temperature_gradients = binning_gradients(ds_hgradT_JFM, lon_res=1, lat_res=1,lon_min=-87,lon_max=20,lat_min=26,lat_max=68)
 
 binned_temperature_gradients.to_netcdf('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_JFM_hgradT_filt10km_bin1x1.nc')
 
 
-ds_hgradT_JAS=xr.open_dataset('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_y2013m06-m08.1d_hgradT_filt-n80-f0.1.nc')
+ds_hgradT_JAS=xr.open_dataset('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_y2013m07-m09.1d_hgradT_large-n80-f0.1.nc')
 
 binned_temperature_gradients = binning_gradients(ds_hgradT_JAS, lon_res=1, lat_res=1,lon_min=-87,lon_max=20,lat_min=26,lat_max=68)
 
 binned_temperature_gradients.to_netcdf('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_JAS_hgradT_filt10km_bin1x1.nc')
 
-ds_hgradS_JFM=xr.open_dataset('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_y2013m01-m03.1d_hgradS_filt-n80-f0.1.nc')
+ds_hgradS_JFM=xr.open_dataset('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_y2013m01-m03.1d_hgradS_large-n80-f0.1.nc')
 
 binned_temperature_gradients = binning_gradients(ds_hgradS_JFM, lon_res=1, lat_res=1,lon_min=-87,lon_max=20,lat_min=26,lat_max=68)
 
 binned_temperature_gradients.to_netcdf('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_JFM_hgradS_filt10km_bin1x1.nc')
 
 
-ds_hgradS_JAS=xr.open_dataset('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_y2013m06-m08.1d_hgradS_filt-n80-f0.1.nc')
+ds_hgradS_JAS=xr.open_dataset('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_y2013m07-m09.1d_hgradS_large-n80-f0.1.nc')
 
 binned_temperature_gradients = binning_gradients(ds_hgradS_JAS, lon_res=1, lat_res=1,lon_min=-87,lon_max=20,lat_min=26,lat_max=68)
 
 binned_temperature_gradients.to_netcdf('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_JAS_hgradS_filt10km_bin1x1.nc')
 
 
+ds_hgradb_JFM=xr.open_dataset('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_y2013m01-m03.1d_hgradb_large-n80-f0.1.nc')
+
+binned_temperature_gradients = binning_gradients(ds_hgradb_JFM, lon_res=1, lat_res=1,lon_min=-87,lon_max=20,lat_min=26,lat_max=68)
+
+binned_temperature_gradients.to_netcdf('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_JFM_hgradb_filt10km_bin1x1.nc')
 
 
+ds_hgradb_JAS=xr.open_dataset('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_y2013m07-m09.1d_hgradb_large-n80-f0.1.nc')
+
+binned_temperature_gradients = binning_gradients(ds_hgradb_JAS, lon_res=1, lat_res=1,lon_min=-87,lon_max=20,lat_min=26,lat_max=68)
+
+binned_temperature_gradients.to_netcdf('/scratch/cnt0024/hmg2840/albert7a/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_JAS_hgradb_filt10km_bin1x1.nc')
 
 
 
