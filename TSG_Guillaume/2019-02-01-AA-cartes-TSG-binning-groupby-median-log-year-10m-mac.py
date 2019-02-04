@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[9]:
-
 
 import xarray as xr
 import numpy as np
@@ -13,7 +8,6 @@ import sys
 sys.path.insert(0,"/Users/auraoupa/Work/git/cmclimate")
 import cmclimate
 import os
-get_ipython().magic(u'matplotlib inline')
 matplotlib.rcParams['figure.figsize']= (20, 8)
 matplotlib.rcParams['xtick.labelsize']= 22
 matplotlib.rcParams['ytick.labelsize']= 22
@@ -32,30 +26,32 @@ import cartopy.feature as cfeature
 from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
 
 
-# In[2]:
 
 
-ds_hgradT_JFM=xr.open_dataset('/Users/auraoupa/Data/NATL60/NATL60-CJM165-S/filt10m/NATL60-CJM165_year_hgradT_filt10km_bin1x1.nc')
-ds_hgradS_JFM=xr.open_dataset('/Users/auraoupa/Data/NATL60/NATL60-CJM165-S/filt10m/NATL60-CJM165_year_hgradS_filt10km_bin1x1.nc')
-ds_hgradb_JFM=xr.open_dataset('/Users/auraoupa/Data/NATL60/NATL60-CJM165-S/filt10m/NATL60-CJM165_year_hgradb_filt10km_bin1x1.nc')
+ds_hgradT_JFM_surf=xr.open_dataset('/mnt/meom/workdir/albert/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_year_hgradT_filt10km_bin1x1.nc')
+ds_hgradS_JFM_surf=xr.open_dataset('/mnt/meom/workdir/albert/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_year_hgradS_filt10km_bin1x1.nc')
+ds_hgradb_JFM_surf=xr.open_dataset('/mnt/meom/workdir/albert/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_year_hgradb_filt10km_bin1x1.nc')
+
+ds_hgradT_JFM_10m=xr.open_dataset('/mnt/meom/workdir/albert/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_year_hgradT_filt10km_bin1x1.nc')
+ds_hgradS_JFM_10m=xr.open_dataset('/mnt/meom/workdir/albert/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_year_hgradS_filt10km_bin1x1.nc')
+ds_hgradb_JFM_10m=xr.open_dataset('/mnt/meom/workdir/albert/NATL60/NATL60-CJM165-S/filt/NATL60-CJM165_year_hgradb_filt10km_bin1x1.nc')
 
 
-# In[3]:
 
+hgradT_JFM_surf=ds_hgradT_JFM_surf['vohgradb']
+hgradS_JFM_surf=ds_hgradS_JFM_surf['vohgradb']
+hgradb_JFM_surf=ds_hgradb_JFM_surf['vohgradb']
 
-hgradT_JFM=ds_hgradT_JFM['vohgradb']
-hgradS_JFM=ds_hgradS_JFM['vohgradb']
-hgradb_JFM=ds_hgradb_JFM['vohgradb']
+hgradT_JFM_10m=ds_hgradT_JFM_10m['vohgradb']
+hgradS_JFM_10m=ds_hgradS_JFM_10m['vohgradb']
+hgradb_JFM_10m=ds_hgradb_JFM_10m['vohgradb']
 
-
-# In[11]:
 
 
 fig=plt.figure(figsize=(20,8))
-data=ma.masked_invalid(ds_hgradT_JFM['vohgradb'])
-lon=ds_hgradT_JFM['nav_lon']
-lat=ds_hgradT_JFM['nav_lat']
-#add_map(lon_min=-85, lon_max=20, lat_min=25, lat_max=70, scale='low')
+data=ma.masked_invalid(ds_hgradT_JFM_surf['vohgradb'])
+lon=ds_hgradT_JFM_surf['nav_lon']
+lat=ds_hgradT_JFM_surf['nav_lat']
 norm=matplotlib.colors.LogNorm(vmin=5e-6, vmax=1e-4)
 
 ax = plt.subplot(1, 1, 1,projection=ccrs.PlateCarree(central_longitude=0))
